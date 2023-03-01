@@ -11,8 +11,8 @@ var start = false
 
 canvas.addEventListener("click", (e)=>{
     if(inside || !start) return
-    obj.style.top=Math.floor(Math.random() * 450)+"px"
-    obj.style.left=Math.floor(Math.random() * 750)+"px"
+    obj.style.top=Math.floor(Math.random() * 70)+"vh"
+    obj.style.left=Math.floor(Math.random() * 90)+"vw"
     missCounter++
     miss.innerHTML=missCounter
 })
@@ -20,8 +20,8 @@ canvas.addEventListener("click", (e)=>{
 obj.addEventListener("click", (e)=>{
     start=true
     canvas.style.backgroundColor="red"
-    obj.style.top=Math.floor(Math.random() * 450)+"px"
-    obj.style.left=Math.floor(Math.random() * 750)+"px"
+    obj.style.top=Math.floor(Math.random() * 70)+"vh"
+    obj.style.left=Math.floor(Math.random() * 90)+"vw"
     scoreCounter++
     score.innerHTML=scoreCounter
 })
